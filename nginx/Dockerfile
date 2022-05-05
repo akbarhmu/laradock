@@ -26,6 +26,9 @@ RUN set -x ; \
 
 ARG PHP_UPSTREAM_CONTAINER=php-fpm
 ARG PHP_UPSTREAM_PORT=9000
+ARG NGINX_AUTO_SELF_SIGNED_SSL=false
+
+ENV NGINX_SELF_SIGNED_SSL=${NGINX_AUTO_SELF_SIGNED_SSL}
 
 # Create 'messages' file used from 'logrotate'
 RUN touch /var/log/messages

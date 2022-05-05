@@ -12,8 +12,8 @@ server {
     # For https
     # listen 443 ssl;
     # listen [::]:443 ssl ipv6only=on;
-    # ssl_certificate /etc/nginx/ssl/default.crt;
-    # ssl_certificate_key /etc/nginx/ssl/default.key;
+    # ssl_certificate /etc/nginx/ssl/laravel.test/laravel.test.crt;
+    # ssl_certificate_key /etc/nginx/ssl/laravel.test/laravel.test.key;
 
     server_name laravel.test;
     root /var/www/laravel/public;
